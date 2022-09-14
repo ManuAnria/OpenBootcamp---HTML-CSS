@@ -1,0 +1,29 @@
+<!--El ! crea automaticamente la estructura del HTML-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Utilidades CSS</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <!--Primera forma de insertar/importar estilos - en local(interna). MEJOR ALTERNATIVA! - -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/pure-min.css"
+      integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH"
+      crossorigin="anonymous"
+    /> <!--Tercera forma de insertar/importar estilos - importar de sitio web(externa) - -->
+    <style>
+      p {
+        color: red;
+      } /*Segunda forma de insertar/importar estilos */
+    </style>
+  </head>
+  <body>
+    <p> Parrafo</p>
+    <button class="pure-button">Boton</button>
+    <button style="padding:10px; border-radius: 10px;">Boton personalizado</button>
+  </body>
+</html>

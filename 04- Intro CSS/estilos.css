@@ -1,0 +1,45 @@
+h1 {
+    color: pink;
+}
+/* COMENTARIO: Estoy probando colores y fuentes */
+p {
+    color: blue;
+    font-size: 16pt;
+}
+
+/* El # es para identificar un ID */
+#primera-noticia {
+    color: green;
+    font-size: 10pt;
+}
+
+#segunda-noticia {
+    color: darkmagenta;
+}
+
+/* El . es para identificar una clase */
+.encabezado {
+    color: darkcyan;
+    font-size: 24pt;
+    text-transform: uppercase;
+}
+
+/* El * es para identificar todos los elementos */
+* {
+    font-family: Helvetica;
+}
+
+/* Afecta a todos los elementos de la clase "warning" */
+*.warning {
+    color: red;
+}
+
+
+/* De cualquiera de estas formas estaria bien, es mas practico separar con coma para usar menos linesas de codigo */
+.autor, .fecha {
+    text-decoration: underline;
+}
+
+.ubicacion {
+    text-decoration: underline;
+}
