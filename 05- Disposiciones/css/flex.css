@@ -1,0 +1,33 @@
+.flex {
+    display:flex;   /* flex container acomoda las disposiciones de las etiquetas incluidas dentro del contenedor */
+    background-color: yellow;
+    height: 300px;
+    justify-content: space-around;    /* center= acomoda los elementos en el centro (con relacion al eje X) del contenedor */
+                                /* space-beween: distribuye espacio sobrante entre los contenidos */
+                                /* space-around: distribuye espacio sobrante entre los contenidos, y se adecua a medida que se cambia el tamaño de la ventana */
+
+    align-items: center;  /*stretch es el valor por defevto. Si no se indica alltura a los elementos, se estira para que se ajusten al contenedor */
+                           /* center: acomoda elemento al centro, y se ajusta en funcion del texto incluido en la etiqueta */    
+    /*     flex-wrap: nowrap;
+ */}
+
+.contenido-1 {
+    background-color: white;
+    width: 100px;
+/*     height: 200px;
+ */    border: 1px solid blue;
+}
+
+.contenido-2 {
+    background-color: white;
+    width: 100px;
+/*     height: 200px;
+ */    border: 1px solid blue;
+}
+
+.contenido-3 {
+    background-color: white;
+    width: 100px;
+/*     height: 200px;
+ */    border: 1px solid blue;
+}

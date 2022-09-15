@@ -1,0 +1,42 @@
+div {
+    border: 1px solid gray;
+    padding: 5px;
+    margin: 5px;
+}   
+
+/* Static no se ve afectado por alineaciones o posicionamientos */
+
+.relative {
+    position: relative;
+    top: 10px;      /* Se mueve 10px hacia abajo */
+    left: 80px;     /* Se mueve 80px a la derecha */
+    margin-left: 10px;
+}
+
+.fixed { /*Elimina el espacion sobrante */
+    position: fixed;
+    bottom: 0px;    /* Fija la posicion en la parte inferior */
+    left: 0px;      /* Fija la posicion en la parte izquierda */
+    background-color: greenyellow;
+    z-index: 100;   /* Se muestra por encima de los demas elementos */  
+}
+
+
+.relative-contenedor {
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+}
+
+.absolute { /* idem FIXED, pero se mueve con el scroll */
+    position: absolute;
+    top: 0px;
+}
+
+.sticky{    /* Se fija en la parte superior cuando se llega a la posicion */
+    position: sticky;
+    background-color: darksalmon;
+    color: white;
+    top: 0px;
+    z-index: 2;
+}
