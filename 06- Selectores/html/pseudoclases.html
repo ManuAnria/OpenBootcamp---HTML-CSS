@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pseudoclases</title>
+    <link rel="stylesheet" href="../css/pseudoclases.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .hover {
+        width: 300px;
+        height: 100px;
+        background-color: bisque;
+      }
+
+      .hover:hover {
+        background-color: burlywood;
+      }
+
+      .listado {
+        background-color: aquamarine;
+        padding: 15 px;
+      }
+
+      .listado p:first-child { /* Indicar que elemento desea afectarse. En este caso "p" */
+        color: white;
+      }
+
+      a:link { /* Indica que el elemento aun no ha sido visitado */
+        color: deeppink
+      }
+
+      a:visited { /* Indica que el elemento ya ha sido visitado */
+        color: crimson
+      }
+
+      a:hover {
+        color: pink
+      }
+
+      a:active { /* Indica que el elemento esta siendo activado */
+        color: greenyellow
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hover">
+      <p>
+        Cupidatat ex dolor magna et est cupidatat elit sunt laborum eiusmod.
+        Eiusmod esse do eiusmod sit commodo proident amet aliquip duis eiusmod
+        in nostrud adipisicing consequat.
+        officia.
+      </p>
+    </div>
+    <div class="listado">
+        <p>Parrafo 1</p>
+        <p>Parrafo 2</p>
+        <p>Parrafo 3</p>
+    </div>
+    <div class="enlaces">
+        <a href="https://google.com" target="_blank">Enlace a Google</a>
+        <a href="https://marca.com" target="_blank">Enlace a Marca</a>
+    </div>
+  </body>
+</html>

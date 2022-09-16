@@ -1,0 +1,22 @@
+/* Especificidad */
+/* (0,0,0) = (id,class,etiqueta)*/
+/* (1,0,0,0) si defino el style dentro de la etiqueta en html, tiene prioridad sobre todo lo definido en el css */
+
+/* Si agrego otro id al id que ya tengo, la especificidad aumenta. Lo mismo con clases y etiquetas */
+
+
+h1 {
+    color: blue !important; /* (1,0,0,0,0) !important sobreescribe cualquier especificidad */
+}
+
+.h1-class {     /* Al ser una clase tiene prioridad sobre la etiqueta h1 */
+    color: yellow;
+}
+
+#h1-id {    /* Al ser un id tiene prioridad sobre la clase y la etiqueta h1 */
+    color: darksalmon;
+}
+
+p {
+    color: red;
+}

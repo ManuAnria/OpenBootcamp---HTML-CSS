@@ -1,0 +1,45 @@
+.contenedor {
+    width: 300px;
+    height: 100px;
+    background-color: aquamarine
+}
+
+div {
+    background-color: blue; /* Si no existe un selector de clase que defina color de fondo, se aplica a todos los div */
+}
+span.frase {
+    font-style: italic;
+}
+
+span.frase::before {    /* ::before es un pseudo-elemento que efectua acciones que se muestran antes de mostrar la etiqueta*/
+    content: '<<';
+    font-size: small;;
+}
+
+span.frase::after {    /* ::after es un pseudo-elemento que efectua acciones que se muestran despues de mostrar la etiqueta*/
+    content: '>>';
+    font-size: small;;
+}
+
+.libro {
+    background-color: bisque;
+    padding: 15px;
+    font-family: Arial;
+}
+
+.libro::first-letter {
+    font-size: xx-large;
+}
+
+.libro::first-line {
+    color: white;
+}
+
+.libro p::selection {
+    background-color: chocolate;
+    color: lime;
+}
+
+.listado ul li::marker {
+    color: red;
+}
