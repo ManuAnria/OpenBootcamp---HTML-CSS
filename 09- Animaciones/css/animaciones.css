@@ -1,0 +1,49 @@
+.padre {
+    width:400px;
+    height:400px;
+    background-color: blue;
+}
+
+.hijo {
+    width:50%;
+    height:50%;
+    background-color: beige;
+    /* transition: transform 1s linear 0.5s; */ /* por defecto la transicion se aplica a todos los atributos, si quiero que se aplique a uno en particular se debe aclarar */
+                                        /* tipos de transiciones: lineal (linear): toda la transicion se da en el mismo tiempo,
+                                                                  ease: la transicion se da de forma gradual, mas rapido al principio y mas lento al final,
+                                                                    ease-in: la transicion se da de forma gradual, mas lento al principio y mas rapido al final,*/
+                                        /* A traves de "Insepccionar" en Chrome, se pueden personalizar las transiciones y luego copiar el codigo */
+                                        /* 0.5s = delay. Va despues del tipo de transicion */
+    animation: traslacion 2s linear 2 forwards; /* forwards: para que la animacion se quede en el ultimo estado */
+                                        /* 2: numero de veces que se repite la animacion. Puede ir "infinite" para mantenerlo en loop */
+}
+
+
+.padre:hover .hijo {
+    /* transform: translateX(100%);
+    background-color: blueviolet;*/
+    animation-play-state: paused; /* para pausar la animacion */
+} 
+
+@keyframes traslacion {
+    0% {
+        background-color: brown;
+        transform: translateX(0%);
+    }
+    25% {
+        background-color: blue;
+        transform: translateX(100%);
+    }
+    50% {
+        background-color: red;
+        transform: translateX(100%) translateY(100%);
+    }
+    75% {
+        background-color: green;
+        transform: translateY(100%);
+    }
+    100% {
+        background-color: darkorange;
+        transform: translateX(0%);
+    }
+}
