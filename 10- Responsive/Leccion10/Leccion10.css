@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.izquierda {
+    background-color: #f1f1f1;
+    display:flex;
+    flex-direction: column;
+}
+
+.elemento {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid blue;
+}
+
+.derecha {
+    flex-grow: 3;
+    border: 2px solid greenyellow;
+    color: purple;
+    font-size: 2rem;
+}
+
+@media (max-width: 640px) {
+    .izquierda {
+        flex-direction: row;
+    }
+
+    .contenedor {
+        flex-direction: column-reverse;
+    }
+
+    .derecha {
+        flex-grow: 1;
+    }
+
+}

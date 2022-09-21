@@ -1,0 +1,31 @@
+.contenedor {
+    display: grid;
+    gap: 0.5rem;
+    /* column-gap: 0.1rem;
+    row-gap: 1rem; */
+    /* grid-template-columns: auto auto auto; */ /* auto auto auto: 3 columnas */
+    /* grid-template-columns: repeat(3, auto); */ /* 3 columnas */
+    /* grid-template-columns: 20px 4rem 25vw; */
+    grid-template-columns: 1fr 2fr 3fr; /* 3 columnas */
+    grid-template-rows: 2fr 1fr 1fr;
+    /* grid-template-areas: 'head head head' 'main main aside' 'footer footer footer'; */
+}
+
+.item {
+    background-color: aquamarine;
+    padding: 0.25rem;
+    font-size: 2rem;
+    border: solid 1px blue;
+}
+
+.item-1 {
+    /* grid-area: head; */
+    /* grid-column: 2 / 4; */ /* Empieza en columna 2 y va hasta columna 4 */
+    grid-column: 2 / span 2; /* Empieza en columna 2 y de ahi ocupa 2 lugares */;
+}
+
+.item-9 {
+    /* grid-area: footer; */
+    grid-area: 2/ 1 /4 /3; /* Empieza en fila 2, columna 2 y termina en fila 4, columna 5 */
+    /* grid-area: filainicio/columnainicio/filaFin/columnaFin; */
+}

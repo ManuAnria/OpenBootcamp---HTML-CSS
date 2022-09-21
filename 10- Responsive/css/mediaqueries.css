@@ -1,0 +1,27 @@
+h1 {
+    color:red;
+    font-size: 4rem;
+}
+
+p {
+    color: black;
+    font-size: 2rem;
+}
+
+@media (max-width: 576px) {      /*print aplica a los diseños que se observan al imprimir*/
+    h1 {
+        color:blue;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 995px) {
+    h1 {
+        color:green;
+    }
+}
+
+@media (orientation: landscape) {
+    p {
+        color:brown;
+    }
+}
